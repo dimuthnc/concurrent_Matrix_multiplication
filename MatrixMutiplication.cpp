@@ -10,7 +10,7 @@
 #include <omp.h>
 #include <sys/time.h>
 using namespace std;
-double samples_count = 1;
+double samples_count = 20;
 struct timeval startVal, endVal;
 
 void printDetails(int size, double totTime, double sqSum)
@@ -181,7 +181,7 @@ void matrixMultiplication(int size)
 
 int main(int argc, char **argv)
 {
-    for (int i = 2000; i <= 2000; i += 200)
+    for (int i = 200; i <= 2000; i += 200)
     {
         matrixMultiplication(i);
     }
